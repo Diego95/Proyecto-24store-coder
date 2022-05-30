@@ -1,0 +1,157 @@
+/*caja flexible para encabezado*/
+.encabezado{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.803);
+    color: white;
+    justify-content: center
+    }
+/*Css para todas las paginas*/
+body{
+    background-color: lightgray;
+}
+
+.menu{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+.menu li{
+display: inline-block;
+}
+.menu li a{
+    padding: 10px 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+
+}
+.menu li a:hover{
+    background:white;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    color: white;
+    
+}
+h2{
+    font-style: italic;
+    padding: 20px;
+    border:0 ;
+    margin: 0;
+    color:black;
+    text-align: center;
+}
+h3{
+    font-style: italic;  
+    
+}
+
+section{
+    
+    margin: 5px;
+    border: 10px;
+}
+
+
+img{
+    
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    display: inline;
+    border-radius: 15px;
+    padding: 10px;
+}
+form{
+    width: auto;
+    border: 2px;
+    margin: 20px solid;
+    padding: 20px;
+    
+}
+label{
+    font-size: 15px;
+    display: block;
+    width: 100%;
+}
+input{
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+footer{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.803);
+}
+/* Aplicando flex box y Grids al index */
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    border: black solid 1px;
+    display: flex;
+     color: white;
+    text-align: center;
+    height: 100%;
+}
+.sec1{
+width: 80%;
+}
+
+.mercaderia{
+    display: grid;
+    
+    background-color: rgba(0, 0, 0, 0.803);
+    display: flex;
+    justify-content:left;
+}
+.sec2{
+width: 20%;
+}
+.ofertarelampago{
+    text-align: center;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 25%;
+    background-color: red;
+    }
+    .colecciontemporada{
+        
+        height: 50%;
+        display: grid;
+        grid-template-columns: 25%;
+        background-color: lightyellow;
+        color: black;
+    }
+  
+/*aplicando flexbox a las paginas contactos y trabaja con nosotros*/
+.registros{
+    background-color:rgba(0, 0, 0, 0.803); 
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+form{
+    text-align: start;
+}
+.ayuda{
+    background-color:rgba(0, 0, 0, 0.803); 
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+
+/* aplicando media query al index "menu de mercaderia"*/
+
+@media screen and  (max-width:1100px){
+    .sec2{
+        flex-direction: column;
+
+    }
+    .mercaderia{
+        flex-direction: column;
+    }
+    
+}
